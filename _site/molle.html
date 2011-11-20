@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta http-equiv="Content-type" content="text/html; charset=utf-8" />
+    <title>The MOLLE Panel</title>
+  
+    <link rel="shortcut icon" href="/favicon.png" />
+
+    <link rel="stylesheet" href="http://styles.themollepanel.com/screen.css" type="text/css" media="screen, projection">
+    <link rel="stylesheet" href="http://styles.themollepanel.com/print.css" type="text/css" media="print">
+    <!--[if lt IE 8]>
+      <link rel="stylesheet" href="/stylesheets/ie.css" type="text/css" media="screen, projection">
+    <![endif]-->
+    <link href="http://styles.themollepanel.com/base.css" media="screen, projection" rel="stylesheet" type="text/css" />
+    <link rel="stylesheet" href="http://styles.themollepanel.com/lightbox.css" type="text/css" media="screen" />
+    
+    <script type="text/javascript" src="http://use.typekit.com/yyg6fbq.js"></script>
+    <script type="text/javascript">try{Typekit.load();}catch(e){}</script>
+    
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/prototype/1.7.0.0/prototype.js"></script>
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/scriptaculous/1.9.0/scriptaculous.js?load=effects,builder"></script>
+    <script type="text/javascript" src="http://scripts.themollepanel.com/lightbox.js"></script>
+    
+  </head>
+  <body>
+    <div id="main">
+      <div class="container">
+        
+        <div id="store" style="width:150px;float:right;text-align:center;">
+          <p>
+            <img style="height:20px;padding-top:3.5em;" src="/images/us_flag_small.gif"><br>
+            <strong>Made in the USA</strong>
+          </p>
+        </div> <!-- end id="store" -->
+        
+        <div class="header">
+          <h1 class="prepend-1"><a href="/">The MOLLE Panel</a></h1>
+        </div> <!-- end class="header" -->
+
+        <div class="splash" id="splash">
+          <img class="banner" src="http://images.themollepanel.com/banners/banner04.png">
+          <img class="banner" src="http://images.themollepanel.com/banners/banner06.png">
+          <img class="banner" src="http://images.themollepanel.com/banners/banner01.png">
+          <img class="banner" src="http://images.themollepanel.com/banners/banner02.png">
+          <img class="banner" src="http://images.themollepanel.com/banners/banner03.png">
+          <img class="banner" src="http://images.themollepanel.com/banners/banner07.png">
+          <!-- <img src="/images/panel/1.png"> -->
+        </div> <!-- end class="splash" -->
+
+        <div class="description prepend-1 append-1">
+  <div class="span-13 append-1">
+
+    <h3>The MOLLE Standard</h3>
+    
+    <p>
+      <a href="http://en.wikipedia.org/wiki/PALS_webbing">PALS</a>
+    </p>
+    
+    <p>
+      <a href="http://en.wikipedia.org/wiki/MOLLE">MOLLE</a>
+    </p>
+    
+  </div>
+</div>
+
+
+
+
+
+      </div> <!-- end id="container" -->
+      
+      <div class="footer">
+        &copy; 2011, nrlng llc, themollepanel.com - all rights reserved
+      </div> <!-- end class="footer" -->
+
+      <script type="text/javascript" charset="utf-8">
+        document.observe("dom:ready", function() { // wrap everything in a function to avoid polluting the global namespace
+            var banners = $$('.banner'); // no need to create an empty array first
+            banners.invoke('hide');      // no need to use each
+        
+            function showNextBanner() {
+              banners[0].appear();        // show next banner
+              banners[banners.size() - 1].hide();         // hide previous banner
+              banners.push(banners.shift()); // first element moves to become last element
+              showNextBanner.delay(8);       // set a timeout to show the next banner
+            }
+        
+            showNextBanner(); // start the banner rotation/looping
+        }());
+
+      </script>
+
+    </div> <!-- end id="main" -->
+    
+    <script type="text/javascript">
+
+      var _gaq = _gaq || [];
+      _gaq.push(['_setAccount', 'UA-1462195-6']);
+      _gaq.push(['_trackPageview']);
+
+      (function() {
+        var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+        ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+        var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+      })();
+
+    </script>
+  </body>
+</html>
