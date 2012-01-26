@@ -2,13 +2,13 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 <url>
 <loc>http://themollepanel.com</loc>
-<lastmod>2012-01-14</lastmod>
+<lastmod>2012-01-20</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
 <url>
 <loc>http://themollepanel.com/configurations.html</loc>
-<lastmod>2012-01-14</lastmod>
+<lastmod>2012-01-25</lastmod>
 <changefreq>weekly</changefreq>
 <priority>0.5</priority>
 </url>
@@ -26,7 +26,13 @@
 </url>
 <url>
 <loc>http://themollepanel.com/availability.html</loc>
-<lastmod>2012-01-14</lastmod>
+<lastmod>2012-01-25</lastmod>
+<changefreq>weekly</changefreq>
+<priority>0.5</priority>
+</url>
+<url>
+<loc>http://themollepanel.com/bandolier.html</loc>
+<lastmod>2012-01-21</lastmod>
 <changefreq>weekly</changefreq>
 <priority>0.5</priority>
 </url>

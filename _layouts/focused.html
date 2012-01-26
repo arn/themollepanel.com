@@ -36,16 +36,6 @@
           <h1 class="prepend-1"><img style="height:28px;padding-right:15px;" src="http://images.themollepanel.com/tmp_watermark.png"> <a href="/">The MOLLE Panel</a></h1>
         </div> <!-- end class="header" -->
 
-        <div class="splash" id="splash">
-          <img class="banner" src="http://images.themollepanel.com/banners/banner04.png">
-          <img class="banner" src="http://images.themollepanel.com/banners/banner06.png">
-          <img class="banner" src="http://images.themollepanel.com/banners/banner01.png">
-          <img class="banner" src="http://images.themollepanel.com/banners/banner02.png">
-          <img class="banner" src="http://images.themollepanel.com/banners/banner03.png">
-          <img class="banner" src="http://images.themollepanel.com/banners/banner07.png">
-          <!-- <img src="/images/panel/1.png"> -->
-        </div> <!-- end class="splash" -->
-
         {{ content }}
         
       </div> <!-- end id="container" -->
@@ -73,23 +63,6 @@
           po.src = 'https://apis.google.com/js/plusone.js';
           var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(po, s);
         })();
-      </script>
-
-      <script type="text/javascript" charset="utf-8">
-        document.observe("dom:ready", function() { // wrap everything in a function to avoid polluting the global namespace
-            var banners = $$('.banner'); // no need to create an empty array first
-            banners.invoke('hide');      // no need to use each
-        
-            function showNextBanner() {
-              banners[0].appear();        // show next banner
-              banners[banners.size() - 1].hide();         // hide previous banner
-              banners.push(banners.shift()); // first element moves to become last element
-              showNextBanner.delay(8);       // set a timeout to show the next banner
-            }
-        
-            showNextBanner(); // start the banner rotation/looping
-        }());
-
       </script>
 
     </div> <!-- end id="main" -->
