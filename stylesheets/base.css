@@ -104,3 +104,29 @@ div.footer {
 hr {
 	margin-top:3em;
 }
+
+a#buy-now {
+	color:#fff;
+	font-weight:bold;
+	font-size:150%;
+	text-decoration:none;
+	margin-top:2em;
+	padding-left:.5em;
+	padding-right:.5em;
+	border:11px solid #675;
+	background-color:#675;
+	-moz-border-radius: 5px;
+	-webkit-border-radius: 5px;
+	-khtml-border-radius: 5px;
+	border-radius: 5px;
+}
+
+a#buy-now:hover {
+	background-color:#aaa;
+	border-color:#aaa;
+}
+
+a#buy-now:active {
+	background-color:#f60;
+	border-color:#f60;
+}
